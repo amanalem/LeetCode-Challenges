@@ -21,8 +21,6 @@ var arrayRankTransform = function(arr) {
     //create rank holder
     let rank = 1
     
-    console.log(arrObj)
-    
     //for loop (starting from index 1) through arrObj that ranks objects by obj.num value and checks for duplicate num values
     for (let i = 1; i < arrObj.length; i++) {
         //if number is duplicate add rank key that keeps the same rank
@@ -35,8 +33,6 @@ var arrayRankTransform = function(arr) {
             arrObj[i].rank = rank;
         }
     }
-    
-    console.log(arrObj)
     
     //replace arr index values with ranks of objects based on the objects index value
     for (i = 0; i < arr.length; i++) {
