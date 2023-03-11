@@ -29,7 +29,7 @@ var isAnagram = function(s, t) {
     for (i = 0; i < Object.keys(sMap).length; i++) {
         let k = Object.keys(sMap)[i]
         
-        if (sMap[k] != tMap[k] || !tMap[k]) return false
+        if (sMap[k] !== tMap[k] || !tMap[k]) return false
     }
     
     return true
