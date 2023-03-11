@@ -4,7 +4,7 @@
  * @return {boolean}
  */
 var isAnagram = function(s, t) {
-    if (s.length !== t.length) return false
+    if (s.length != t.length) return false
     
     const sMap = {}
     const tMap = {}
@@ -24,12 +24,12 @@ var isAnagram = function(s, t) {
         }
     }
     
-    if (Object.keys(sMap).length !== Object.keys(tMap).length) return false
+    if (Object.keys(sMap).length != Object.keys(tMap).length) return false
     
     for (i = 0; i < Object.keys(sMap).length; i++) {
         let k = Object.keys(sMap)[i]
         
-        if (sMap[k] !== tMap[k] || !tMap[k]) return false
+        if (sMap[k] != tMap[k] || !tMap[k]) return false
     }
     
     return true
