@@ -6,9 +6,9 @@ var generate = function(numRows) {
     
     let rows = []
     
-    rows1 = [1]
+    let rows1 = [1]
     
-    rows2 = [1, 1]
+    let rows2 = [1, 1]
     
     rows.push(rows1
              )
