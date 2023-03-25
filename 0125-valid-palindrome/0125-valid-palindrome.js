@@ -31,12 +31,15 @@ var isPalindrome = function(s) {
 //     }
     
     let str = s.match(/[A-Za-z0-9]/g)
-    if (str === null) return true
-    str = str.join('').toLowerCase()
+    if (str !== null) {
+        str = str.join('').toLowerCase()
     
-    for (i = 0; i < str.length/2; i++) {
-        if (str.charAt(i) !== str.charAt(str.length - i - 1)) return false
+        for (i = 0; i < str.length/2; i++) {
+            if (str.charAt(i) !== str.charAt(str.length - i - 1)) return false
+        }
     }
+    // if (str === null) return true
+    
     
     return true
 };
