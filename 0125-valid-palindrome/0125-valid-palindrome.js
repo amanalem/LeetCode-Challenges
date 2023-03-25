@@ -19,16 +19,19 @@ var isPalindrome = function(s) {
         }
     }
 
-    let f = forward.join('')
-    let b = backward.join('')
+    forward = forward.join('')
+    backward = backward.join('')
     
   
     
-    if (f === b) {
+    if (forward === backward) {
         return true
     } else {
         return false
     }
     
+    // let str = s.match(/[A-Za-z0-9]/g)
+    // if (str === null) return true
+    // str = str.join('')
     
 };
